@@ -51,9 +51,22 @@ export default function Hero() {
             GitHub
           </a>
         </div>
-        <a className="hero-btn" href="#resume">
-          Charles&apos;s CV
-        </a>
+        <div className="hero-downloads">
+          <a
+            className="hero-btn"
+            href="/charles-wilbert-cv.pdf"
+            download="Charles-Wilbert-CV.pdf"
+          >
+            Download CV
+          </a>
+          <a
+            className="hero-btn hero-btn--outline"
+            href="/api/portfolio-pdf"
+            download="Charles-Wilbert-Portfolio.pdf"
+          >
+            Download Portfolio
+          </a>
+        </div>
       </motion.div>
     </section>
   );
