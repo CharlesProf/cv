@@ -1,5 +1,7 @@
 import "./globals.css";
 import { Manrope, Playfair_Display } from "next/font/google";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -19,7 +21,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${playfair.variable}`}>{children}</body>
+      <body className={`${manrope.variable} ${playfair.variable}`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
